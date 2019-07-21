@@ -1,11 +1,14 @@
 # unicorn-cipher
 
-! From <tinoC23/> @ 20/07/2019
+
+! From tinoC23 @ 20/07/2019
+
 
 A worm welcome, to the unicorn cipher, github repository.
 
+
  Some words about the unicorn cipher
-+++++++++++++++++++++++++++++++++++++
+ 
 
 unicorn cipher takes it name from a mythical creature named unicorn.
 
@@ -29,13 +32,14 @@ The unicorn cipher operates as follows:
 [3] user promped to enter, the times that the text will be encrypted/ciphered(from 1 to 25 times)
 [4] the meessage is ciphered [user choice] numbers
 [5] program creates two text files: 
-    [a] the ciphered text file
-    [b] the private key file
+    [a] the ciphered text file,
+    [b] the private key file,
     The above files, will be used, by the lion decipher, in order to assemble,
     the primary/original text message.
     
+    
  unicorn cipher logic/engine
-=============================
+
 
 the unicorn cipher has a random number generator, that produces integers to the range of 1 to 25, 
 beacause a latin alphabet letter, can be shifted forward/backward, 25 letters in total.
@@ -49,23 +53,23 @@ between 1 to 25, that will encypt the text.
 For example:
 Let assume that the program user, choose for the initial text, to be ciphered 25 times. 
 The unicorn cipher will run the cipher algorithm for 25 times.
-Each time, a random integer generator, will choose, how the text letters will be ciphered(the shift pattern of the letters).
+Each time, the random integer generator, will choose, how the text letters will be ciphered(the shift pattern of the letters).
 Each time, the random generator shift integer, is saved in an integer array.
 The result of the unicorn cipher encryption logic/engine, will be the 25 times ciphered text plus a seperate text,
 that will include the private key, for the ciphered text. 
 
 Here is an example of a 25 times ciphered text private key : DACKC1AIE6D13K1DDFFEOFC9N
 
-From the right, the N letter indicates that, in the 25th ciphering of the text, the letters had shifted forwared,
+From the right, the N letter indicates that, in the 25th ciphering of the text, the letters had shifted forward,
 for 22 letters.
 
-The number 9, indicates that, in the 24th ciphering of the text, the letters had shifted forwared,
+The number 9, indicates that, in the 24th ciphering of the text, the letters had shifted forward,
 for 9 letters.
 
 The error handling mechanism of the program, is that:
-[1] letters other than the basic iso latin alphabet(26 letters)
-[2] special symbols
-[3] numbers
+[1] letters other than the basic iso latin alphabet(26 letters),
+[2] special symbols,
+[3] numbers,
 are not ciphered.
 
 I would like to indicate that unicorn cipher,operates only as a cipher.
